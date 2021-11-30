@@ -1,2 +1,5 @@
 # PlayGroundInfoApp
-Show PlaygroundInfo, Check Review
+공공데이터포털을 활용하여 XML을 통한 데이터 파싱
+  - 여러 파싱을 통해 필요한 데이터만 추출하여 사용
+Firebase를 활용하여 Review 기능을 구현
+  - 익명의 닉네임과 비밀번호를 통해 리뷰와 별점을 작성할 수 있음
