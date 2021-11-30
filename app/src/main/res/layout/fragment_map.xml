@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E2F9FB"
+    android:orientation="vertical"
+    tools:context=".MapFragment"
+    >
+
+   <fragment
+       android:id="@+id/map"
+       android:name="com.google.android.gms.maps.SupportMapFragment"
+       android:layout_width="match_parent"
+       android:layout_height="179dp" />
+
+   <LinearLayout
+       android:id="@+id/info"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:fadeScrollbars="false"
+       android:orientation="vertical">
+
+      <LinearLayout
+          android:id="@+id/forCheck"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="horizontal"
+          android:visibility="gone"
+          tools:visibility="gone">
+
+         <TextView
+             android:id="@+id/checkcheck"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:text="123" />
+
+         <TextView
+             android:id="@+id/checkNick"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:text="123" />
+
+         <TextView
+             android:id="@+id/checkPass"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:text="TextView" />
+
+      </LinearLayout>
+
+      <TextView
+          android:id="@+id/ciName"
+          android:layout_width="match_parent"
+          android:layout_height="47dp"
+          android:background="#7EB8BD"
+          android:padding="10dp"
+          android:textAlignment="center"
+          android:textColor="#000000"
+          android:textSize="22sp"
+          android:textStyle="bold" />
+
+      <TextView
+          android:id="@+id/textView17"
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="#B6B6B6" />
+
+      <TextView
+          android:id="@+id/ciNaddr"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="5dp"
+          android:background="#9DDBE1"
+          android:paddingTop="10dp"
+          android:paddingBottom="10dp"
+          android:textAlignment="center"
+          android:textColor="#000000"
+          android:textSize="18dp" />
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+
+         <TextView
+             android:id="@+id/Name1"
+             android:layout_width="20dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:textAlignment="center"
+             android:textColor="#000000"
+             android:textSize="15dp" />
+
+         <TextView
+             android:id="@+id/textView20"
+             android:layout_width="2sp"
+             android:layout_height="wrap_content"
+             android:background="#A6A6A6"
+             android:textSize="15sp" />
+
+         <TextView
+             android:id="@+id/Name21"
+             android:layout_width="20dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:textAlignment="center"
+             android:textColor="#000000"
+             android:textSize="15dp" />
+
+         <TextView
+             android:id="@+id/textView21"
+             android:layout_width="2sp"
+             android:layout_height="wrap_content"
+             android:background="#A6A6A6"
+             android:textSize="15sp" />
+
+         <TextView
+             android:id="@+id/Name2"
+             android:layout_width="20dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:textAlignment="center"
+             android:textColor="#000000"
+             android:textSize="15sp" />
+
+         <TextView
+             android:id="@+id/textView22"
+             android:layout_width="2sp"
+             android:layout_height="wrap_content"
+             android:background="#A6A6A6"
+             android:textSize="15sp" />
+
+         <TextView
+             android:id="@+id/Name4"
+             android:layout_width="20dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:textAlignment="center"
+             android:textColor="#000000"
+             android:textSize="15sp" />
+
+         <Button
+             android:id="@+id/showInputbtn"
+             android:layout_width="20dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:background="#86CAC4"
+             android:text="정보입력" />
+
+      </LinearLayout>
+
+      <TextView
+          android:id="@+id/textView12"
+          android:layout_width="match_parent"
+          android:layout_height="2dp"
+          android:layout_marginTop="5dp"
+          android:layout_weight="1"
+          android:background="#000000" />
+
+      <TextView
+          android:id="@+id/textView4"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:background="#F1F9FA"
+          android:paddingTop="10dp"
+          android:paddingBottom="10dp"
+          android:text="리뷰"
+          android:textAlignment="center"
+          android:textColor="#000000"
+          android:textSize="20dp"
+          android:textStyle="bold" />
+
+      <TextView
+          android:id="@+id/textView14"
+          android:layout_width="match_parent"
+          android:layout_height="2dp"
+          android:layout_marginBottom="5dp"
+          android:background="#000000" />
+
+      <LinearLayout
+          android:id="@+id/inputReview"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:paddingLeft="5dp"
+          android:paddingRight="5dp"
+          android:visibility="gone">
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_weight="1"
+             android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/in_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Nickname"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/in_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPersonName"
+                android:password="true" />
+         </LinearLayout>
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/in_review"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Review"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/in_starpoint"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="☆"
+                android:inputType="textPersonName" />
+
+            <Button
+                android:id="@+id/reviewbtn"
+                android:layout_width="50dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:background="#86CAC4"
+                android:text="입력" />
+
+         </LinearLayout>
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+
+         <TextView
+             android:id="@+id/text11"
+             android:layout_width="130dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:background="#F1F9FA"
+             android:paddingLeft="10dp"
+             android:text="Nickname"
+             android:textColor="#000000" />
+
+         <TextView
+             android:id="@+id/text111"
+             android:layout_width="236dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:background="#F1F9FA"
+             android:paddingLeft="5dp"
+             android:text="Review"
+             android:textColor="#000000" />
+
+         <TextView
+             android:id="@+id/texet111"
+             android:layout_width="50dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:background="#F1F9FA"
+             android:text="★"
+             android:textAlignment="center" />
+
+      </LinearLayout>
+
+      <TextView
+          android:id="@+id/textView16"
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:layout_marginTop="5dp"
+          android:background="#000000" />
+
+      <ScrollView
+          android:layout_width="match_parent"
+          android:layout_height="325dp">
+
+         <androidx.recyclerview.widget.RecyclerView
+             android:id="@+id/recyclerView2"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="10dp" />
+      </ScrollView>
+
+   </LinearLayout>
+
+</LinearLayout>
